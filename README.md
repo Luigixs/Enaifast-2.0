@@ -1,73 +1,174 @@
-# Welcome to your Lovable project
+📌 Descrição Geral
 
-## Project info
+Esta plataforma é um sistema educacional completo e gamificado, desenvolvido para gestão de cursos, turmas, usuários, desempenho dos alunos e vendas.
+O projeto integra ferramentas avançadas de administração, analytics, comunidade e gamificação, oferecendo uma experiência moderna tanto para administradores quanto para alunos.
 
-**URL**: https://lovable.dev/projects/a8d711a1-8f49-48fe-982e-ce03a2a04a02
+🚀 Principais Funcionalidades
+🏫 Visão do Administrador
 
-## How can I edit this code?
+Dashboard completo com estatísticas de usuários, atividade nos últimos 30 dias e gráficos de desempenho.
 
-There are several ways of editing your application.
+Gestão da escola: dados institucionais, redes sociais, multilogs, notificações, professores e banners.
 
-**Use Lovable**
+Políticas: criação e edição dos Termos de Uso e Política de Privacidade.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a8d711a1-8f49-48fe-982e-ce03a2a04a02) and start prompting.
+Certificados: editor visual com frente e verso personalizáveis.
 
-Changes made via Lovable will be committed automatically to this repo.
+Gamificação avançada:
 
-**Use your preferred IDE**
+Configuração de pontos, XP, moedas, ligas, penalidades e multiplicadores.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Definição de ganhos por ação (login, assistir aula, comentar, responder questão, etc.).
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Criação, edição e exclusão de ligas.
 
-Follow these steps:
+Cursos:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Criar, editar, ordenar e gerenciar cursos completos.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Adicionar módulos, aulas (vídeo, PDF, imagem, link) e capas (desktop + mobile).
 
-# Step 3: Install the necessary dependencies.
-npm i
+Gerenciar alunos do curso, enviar mensagens e importar/exportar listas.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Usuários:
+
+Gerenciamento completo com visualização de progresso, cursos e analytics.
+
+Gestão de Perfis:
+
+Criação de perfis (Admin, Gestor, Aluno, Suporte, Monitor etc.).
+
+Controle detalhado de permissões por ação.
+
+Vendas e Planos (Asaas):
+
+Controle de vendas, valores, histórico e % mensal.
+
+Criação de planos: pagamento único ou assinatura (mensal, trimestral, anual).
+
+Integração automática de juros via API.
+
+Banco de Questões:
+
+Gestão de disciplinas, assuntos e classes.
+
+Cadastro completo de questões com enunciado, alternativas A–E, resolução e dica.
+
+Pesquisa avançada e filtros.
+
+🎓 Visão do Aluno
+
+Cursos:
+
+Cards com progresso (%), capa e quantidade de aulas.
+
+Carrossel de aulas com barra de progresso individual.
+
+Vídeos, PDFs e imagens com marca d’água personalizada.
+
+Comentários e anotações (texto ou desenho).
+
+Avaliação da aula e XP exibido.
+
+Questões:
+
+Questões com imagens e estatísticas de acertos, erros e alternativas.
+
+Visualização de dicas.
+
+Comunidade:
+
+Chat geral e grupos.
+
+Criação de tópicos e respostas.
+
+Ranking semanal, mensal e geral.
+
+Analytics Completo:
+
+XP total, XP semanal, streak, patentes, classpoint.
+
+Gráficos: acertos vs erros, desempenho por disciplina, período selecionado.
+
+Mapa de calor anual das atividades.
+
+Ranking Geral:
+
+Exibe posição, nome, foto, patente e XP.
+
+Permite visualizar o analytics de outros alunos.
+
+🧩 Tecnologias Utilizadas
+
+(Você pode ajustar conforme seu stack real)
+
+Frontend: HTML, CSS, JavaScript (ou React/Next.js).
+
+Backend: PHP, Laravel ou Node.js.
+
+Banco de Dados: MySQL ou PostgreSQL.
+
+Integrações:
+
+Pagamentos: Asaas API
+
+Serviços internos: API própria
+
+Outros:
+
+Sistema de Gamificação próprio
+
+Player de vídeo com marca d’água
+
+Visualizador de PDF protegido
+
+📂 Estrutura do Projeto
+/src
+  /admin
+    /dashboard
+    /escola
+    /cursos
+    /usuarios
+    /perfis
+    /vendas
+    /planos
+    /banco-questoes
+  /aluno
+    /cursos
+    /comunidade
+    /analytics
+    /ranking
+  /components
+  /services
+  /assets
+
+🏁 Como Instalar
+git clone https://github.com/seu-repositorio/plataforma-educacional.git
+cd plataforma-educacional
+
+# Instalar dependências (exemplo Laravel)
+composer install
+npm install
+
+# Configurar o ambiente
+cp .env.example .env
+php artisan key:generate
+
+# Rodar migrações
+php artisan migrate
+
+# Iniciar servidor
+php artisan serve
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+💡 Próximas Implementações
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+App mobile (Android/iOS)
 
-**Use GitHub Codespaces**
+Gamificação avançada por temporadas
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Notificações push
 
-## What technologies are used for this project?
+Lives e transmissões integradas
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a8d711a1-8f49-48fe-982e-ce03a2a04a02) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+IA para criação de questões
